@@ -22,5 +22,5 @@ class RemiderService {
   }
 }
 
-// exporting a new instance every time so that we do not have to call the new operator every time
+// exporting a new instance so that we do not have to call the new operator every time
 export default new RemiderService();

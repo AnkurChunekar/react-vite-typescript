@@ -6,9 +6,11 @@ interface RemiderListProps {
 
 const ReminderList = ({ items }: RemiderListProps) => {
   return (
-    <ul>
+    <ul className="list-group">
       {items.map((item) => (
-        <li key={item.id}>{item.title}</li>
+        <li className="list-group-item" key={item.id}>
+          {item.title}
+        </li>
       ))}
     </ul>
   );

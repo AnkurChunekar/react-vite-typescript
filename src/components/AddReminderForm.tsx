@@ -14,6 +14,7 @@ const AddReminderForm = ({
     const currValue = inputRef.current?.value;
     if (typeof currValue === "string" && currValue) {
       addNewReminder(currValue);
+      inputRef.current.value = "";
     } else alert("please add a valid value");
   };
 
